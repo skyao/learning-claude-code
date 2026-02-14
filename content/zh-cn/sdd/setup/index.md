@@ -27,7 +27,7 @@ npm install -g @fission-ai/openspec@latest
 
 ```bash
 $ openspec --version
-1.0.2
+1.1.1
 ```
 
 创建一个测试项目，如 
@@ -108,7 +108,7 @@ npm i -g @openai/codex
 
 ```bash
 $ codex --version
-codex-cli 0.92.0
+codex-cli 0.101.0
 ```
 
 ### 安装 uv
@@ -121,7 +121,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ```bash
 $ uv --version
-uv 0.9.28
+uv 0.10.2
 ```
 
 ### CodeX MCP 安装配置

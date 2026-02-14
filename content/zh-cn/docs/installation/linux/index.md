@@ -22,7 +22,7 @@ Setting up Claude Code...
                                                                               
 ✔ Claude Code successfully installed!                                         
                                                                               
-  Version: 2.1.19                                                             
+  Version: 2.1.39                                                             
                                                                               
   Location: ~/.local/bin/claude                                               
                                                                               
@@ -48,7 +48,7 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 
 ```bash
 $ claude --version      
-2.1.19 (Claude Code)
+2.1.39 (Claude Code)
 
 $ which claude 
 /home/sky/.local/bin/claude
