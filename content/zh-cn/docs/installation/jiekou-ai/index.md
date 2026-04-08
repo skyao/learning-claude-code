@@ -33,15 +33,27 @@ https://docs.jiekou.ai/docs/integration/claudecode
 vi ~/.zshrc
 ```
 
-增加以下内容：
+如果固定使用某一种接口AI中转，可以简单增加以下内容：
 
 
 ```bash
 # claude code
+# jiekou ai forward
 export ANTHROPIC_BASE_URL="https://api.jiekou.ai/anthropic"
 export ANTHROPIC_AUTH_TOKEN="sk_Jscxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-export ANTHROPIC_MODEL="claude-opus-4-5-20251101"
+export ANTHROPIC_MODEL="claude-opus-4-6"
 export ANTHROPIC_SMALL_FAST_MODEL="claude-sonnet-4-5-20250929"
+```
+
+但考虑到可能需要切换不同的AI中转，最好还是使用 alias 来设置，方便切换：
+
+```bash
+# claude code
+# jiekou ai forward
+alias claudecode-jeikou='export ANTHROPIC_BASE_URL="https://api.jiekou.ai/anthropic";export ANTHROPIC_AUTH_TOKEN="sk_JscMPpl32zxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";export ANTHROPIC_MODEL="claude-opus-4-6";export ANTHROPIC_SMALL_FAST_MODEL="claude-sonnet-4-5-20250929"'
+# change to use default model of claude code
+alias claudecode='claudecode-jeikou'
+claudecode
 ```
 
 载入：
@@ -58,4 +70,8 @@ source ~/.zshrc
 claude .
 ```
 
+![](images/jiekou-start.png)
+
 就可以开始使用 claude code 了。
+
+

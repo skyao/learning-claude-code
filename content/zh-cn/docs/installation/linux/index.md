@@ -54,5 +54,37 @@ $ which claude
 /home/sky/.local/bin/claude
 ```
 
+## 升级
+
+和安装一样，再次执行安装脚本
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+输出为：
+
+```bash
+Setting up Claude Code...
+
+✔ Claude Code successfully installed!        
+
+  Version: 2.1.92
+
+  Location: ~/.local/bin/claude
 
 
+  Next: Run claude --help to get started
+
+✅ Installation complete!
+```
+
+检测升级后的版本：
+
+```bash
+$ claude --version      
+2.1.92 (Claude Code)
+
+$ which claude 
+/home/sky/.local/bin/claude
+```
