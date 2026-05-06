@@ -25,7 +25,6 @@ vi ~/.zshrc
 
 如果固定使用某一种接口AI中转，可以简单增加以下内容：
 
-
 ```bash
 # claude code
 # openrouter forward
@@ -41,10 +40,10 @@ export ANTHROPIC_API_KEY=""
 ```bash
 # claude code
 # openrouter forward
-alias claudecode-openrouter='export ANTHROPIC_BASE_URL="https://openrouter.ai/api";export ANTHROPIC_AUTH_TOKEN="sk-or-v1-066c4952432be42556efc4b1fxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";export ANTHROPIC_MODEL="anthropic/claude-opus-4.6";export ANTHROPIC_SMALL_FAST_MODEL="anthropic/claude-sonnet-4.5";export ANTHROPIC_API_KEY=""'
+alias set-claudecode-openrouter='export ANTHROPIC_BASE_URL="https://openrouter.ai/api";export ANTHROPIC_AUTH_TOKEN="sk-or-v1-066c4952432be42556efc4b1fxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";export ANTHROPIC_MODEL="anthropic/claude-opus-4.6";export ANTHROPIC_SMALL_FAST_MODEL="anthropic/claude-sonnet-4.5";export ANTHROPIC_API_KEY=""'
 # change to use default model of claude code
-alias claudecode='claudecode-openrouter'
-claudecode
+alias set-claudecode='set-claudecode-openrouter'
+set-claudecode
 ```
 
 载入：

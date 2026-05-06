@@ -41,8 +41,8 @@ vi ~/.zshrc
 # jiekou ai forward
 export ANTHROPIC_BASE_URL="https://api.jiekou.ai/anthropic"
 export ANTHROPIC_AUTH_TOKEN="sk_Jscxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-export ANTHROPIC_MODEL="claude-opus-4-6"
-export ANTHROPIC_SMALL_FAST_MODEL="claude-sonnet-4-5-20250929"
+export ANTHROPIC_MODEL="claude-opus-4-7"
+export ANTHROPIC_SMALL_FAST_MODEL="claude-sonnet-4-6"
 ```
 
 但考虑到可能需要切换不同的AI中转，最好还是使用 alias 来设置，方便切换：
@@ -50,10 +50,10 @@ export ANTHROPIC_SMALL_FAST_MODEL="claude-sonnet-4-5-20250929"
 ```bash
 # claude code
 # jiekou ai forward
-alias claudecode-jeikou='export ANTHROPIC_BASE_URL="https://api.jiekou.ai/anthropic";export ANTHROPIC_AUTH_TOKEN="sk_JscMPpl32zxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";export ANTHROPIC_MODEL="claude-opus-4-6";export ANTHROPIC_SMALL_FAST_MODEL="claude-sonnet-4-5-20250929"'
+alias set-claudecode-jeikou='export ANTHROPIC_BASE_URL="https://api.jiekou.ai/anthropic";export ANTHROPIC_AUTH_TOKEN="sk_JscMPpl32zxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";export ANTHROPIC_MODEL="claude-opus-4-7";export ANTHROPIC_SMALL_FAST_MODEL="claude-sonnet-4-6"'
 # change to use default model of claude code
-alias claudecode='claudecode-jeikou'
-claudecode
+alias set-claudecode='set-claudecode-jeikou'
+set-claudecode
 ```
 
 载入：
