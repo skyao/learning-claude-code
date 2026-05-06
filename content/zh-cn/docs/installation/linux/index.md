@@ -7,6 +7,14 @@ description: >
   在 Linux 上安装 Claude Code
 ---
 
+## 准备工作
+
+```bash
+sudo apt install curl
+sudo apt install wget
+sudo apt install jq
+```
+
 ## 安装
 
 最好先开启网络代理，然后执行
